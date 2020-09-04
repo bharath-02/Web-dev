@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- Exercise 11 -->
+<html>
+    <head>
+        <title>Display Random Image on Click</title>
+        <style>
+            button {
+                background-color: #badbad;
+                color: darkslategray;
+                border-radius: 4px;
+                padding: 10px;
+                font-size: 20px;
+            }
+            button:hover{
+                background-color:antiquewhite;
+            }
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="my-div">
+            <button type="button" onclick="chooseImage()">Click to Play</button>
+        </div>
+        <ul>
+            <li><a href="01index.html">Go to question #1</a></li>
+            <li><a href="02index.html">Go to question #2</a></li>
+            <li><a href="03index.html">Go to question #3</a></li>
+            <li><a href="04index.html">Go to question #4</a></li>
+            <li><a href="05index.html">Go to question #5</a></li>
+            <li><a href="06index.html">Go to question #6</a></li>
+            <li><a href="07index.html">Go to question #7</a></li>
+            <li><a href="08index.html">Go to question #8</a></li>
+            <li><a href="09index.html">Go to question #9</a></li>
+            <li><a href="10index.html">Go to question #10</a></li>
+            <li><a href="11index.html">Go to question #11</a></li>
+            <li><a href="12index.html">Go to question #12</a></li>
+            <li><a href="13index.html">Go to question #13</a></li>
+        </ul>
+        <script>
+            function chooseImage(){
+                var myDiv = document.getElementById('my-div');
+                var options = [{'image': 'http://farm4.staticflickr.com/3691/11268502654_f28f05966c_m.jpg', 'width': 240, 'height': 160}, {'image': 'http://farm1.staticflickr.com/33/45336904_1aef569b30_n.jpg', 'width': 320, 'height': 195}, {'image': 'http://farm6.staticflickr.com/5211/5384592886_80a512e2c9.jpg', 'width': 500, 'height': 343}];
+                var rando = Math.floor(Math.random() * 3);
+                myDiv.style.background = `url(${options[rando].image}) no-repeat`;
+                myDiv.style.height = `${options[rando].height}px`;
+                myDiv.style.width = `${options[rando].width}px`;
+            }
+        </script>
+    </body>
+</html>

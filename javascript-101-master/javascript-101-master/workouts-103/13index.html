@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!-- Exercise 13 -->
+<html>
+    <head>
+        <title>Get width and height of window on resize</title>
+    </head>
+    <body>
+        <div id="my-div">Resize Window to Measure!</div>
+        <ul>
+            <li><a href="01index.html">Go to question #1</a></li>
+            <li><a href="02index.html">Go to question #2</a></li>
+            <li><a href="03index.html">Go to question #3</a></li>
+            <li><a href="04index.html">Go to question #4</a></li>
+            <li><a href="05index.html">Go to question #5</a></li>
+            <li><a href="06index.html">Go to question #6</a></li>
+            <li><a href="07index.html">Go to question #7</a></li>
+            <li><a href="08index.html">Go to question #8</a></li>
+            <li><a href="09index.html">Go to question #9</a></li>
+            <li><a href="10index.html">Go to question #10</a></li>
+            <li><a href="11index.html">Go to question #11</a></li>
+            <li><a href="12index.html">Go to question #12</a></li>
+            <li><a href="13index.html">Go to question #13</a></li>
+        </ul>
+        <script>
+            window.addEventListener("resize", printSize);
+            function printSize(){
+                var width = window.innerWidth;
+                var height = window.innerHeight;
+                var my_div = document.getElementById('my-div');
+                my_div.innerHTML = 'Height: ' + height + ' Width: ' + width;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- Exercise 10 -->
+<html lang="en">
+    <head>
+        <meta charset=utf-8 />
+        <title>Volume of a Sphere</title>
+        <style>
+            body {
+                padding-top: 30px;
+            }
+            label, input {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Input radius value and get the volume of a sphere.</p>
+        <form id="MyForm">
+            <label for="radius">Radius</label><input type="text" name="radius" id="radius" required/>
+            <label for="volume">Volume</label><input type="text" name="volume" id="volume"/>
+            <input type="button" value="Calculate" id="submit"/>
+        </form>
+        <ul>
+            <li><a href="01index.html">Go to question #1</a></li>
+            <li><a href="02index.html">Go to question #2</a></li>
+            <li><a href="03index.html">Go to question #3</a></li>
+            <li><a href="04index.html">Go to question #4</a></li>
+            <li><a href="05index.html">Go to question #5</a></li>
+            <li><a href="06index.html">Go to question #6</a></li>
+            <li><a href="07index.html">Go to question #7</a></li>
+            <li><a href="08index.html">Go to question #8</a></li>
+            <li><a href="09index.html">Go to question #9</a></li>
+            <li><a href="10index.html">Go to question #10</a></li>
+            <li><a href="11index.html">Go to question #11</a></li>
+            <li><a href="12index.html">Go to question #12</a></li>
+            <li><a href="13index.html">Go to question #13</a></li>
+        </ul>
+        <script>
+            var submit = document.querySelector('#submit');
+            submit.addEventListener('click', commenceCalcuation);
+            
+            function commenceCalcuation(){
+                var radius = document.getElementById('radius');
+                var volume = document.getElementById('volume');
+
+                var r = radius.value;
+                var v = volume.value;
+
+                if (r != '' && v != ''){
+                    alert('Please ensure there is only one value entered');
+                } else if (r == '' && v == ''){
+                    alert('Please ensure there is a value entered');
+                } else if (r != '' && v == ''){
+                    if (isNaN(r)){
+                        alert('This function takes numbers only');
+                    } else {
+                        r = parseFloat(r);
+                        volume.value = (4/3) * Math.PI * Math.pow(r, 3);
+                    }
+                } else if (r == '' && v != ''){
+                    if (isNaN(v)){
+                        alert('This function takes numbers only');
+                    } else {
+                        v = parseFloat(v);
+                        radius.value = Math.pow(((3 * v)/(4 * Math.PI)), (1/3));
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

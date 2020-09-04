@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8 />
+		<title>Change the content of a cell</title>
+	</head>
+	<body>
+		<form>
+			Content: <input type="text" id="content"/>
+			Row: <input type="text" id="row" />
+			Column: <input type="text" id="col" />
+			<input type="button" onclick="changeContent()" value="Change content">
+		</form>
+		<BR>
+		<table id="myTable" border="1">
+			<tr>
+				<td>Row1 cell1</td>
+				<td>Row1 cell2</td>
+			</tr>
+			<tr>
+				<td>Row2 cell1</td>
+				<td>Row2 cell2</td>
+			</tr>
+			<tr>
+				<td>Row3 cell1</td>
+				<td>Row3 cell2</td>
+			</tr>
+		</table>
+	</body>
+
+	<script>
+		function changeContent() {
+			//get references to all the items we need to use
+			let row = document.forms[0].row;
+			let col = document.forms[0].col;
+			let content = document.forms[0].content;
+
+			//call function to get specific TD
+			let td = getTd(row.value, col.value);
+
+			//make sure we found the TD
+			if(td != null) {
+				td.innerHTML = content.value;
+			}
+			//otherwise tell the user we didn't find the TD
+			else{
+				alert("Not found!");
+			}
+			
+			//reset the UI
+			row.value = "";
+			col.value = "";
+			content.value = "";
+		}
+
+		function getTd(row, col) {
+			row = parseInt(row); //textbox value is text by default, make number
+			col = parseInt(col); //textbox value is text by default, make number
+			row--;//input is human friendly, now make computer friendly
+			col--;//input is human friendly, now make computer friendly
+
+			let myTable = document.querySelector("#myTable");
+
+			//iterate over rows
+			for(let i = 0; i<myTable.rows.length;i++) {
+				//iterate over columns
+				for(let j = 0; j<myTable.rows[i].children.length;j++){
+					//find the column we are looking for
+					if(i == parseInt(row) && j == parseInt(col)) {
+						//return a reference to the TD
+						return myTable.rows[i].children[j];
+					}
+				}
+			}
+			//if not found, return null for error checking purposes
+			return null;
+		}
+	</script>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- Exercise 4 -->
+<html>
+    <head>
+        <meta charset=utf-8 />
+    </head>
+    <body>
+        <p><a id="w3r" type="text/html" hreflang="en-us" rel="nofollow" target="_self" href="https://www.w3resource.com/">w3resource</a></p>
+        <button onclick="getAttributes()">Click here to get attributes value</button>
+        <ul>
+            <li><a href="01index.html">Go to question #1</a></li>
+            <li><a href="02index.html">Go to question #2</a></li>
+            <li><a href="03index.html">Go to question #3</a></li>
+            <li><a href="04index.html">Go to question #4</a></li>
+            <li><a href="05index.html">Go to question #5</a></li>
+            <li><a href="06index.html">Go to question #6</a></li>
+            <li><a href="07index.html">Go to question #7</a></li>
+            <li><a href="08index.html">Go to question #8</a></li>
+            <li><a href="09index.html">Go to question #9</a></li>
+            <li><a href="10index.html">Go to question #10</a></li>
+            <li><a href="11index.html">Go to question #11</a></li>
+            <li><a href="12index.html">Go to question #12</a></li>
+            <li><a href="13index.html">Go to question #13</a></li>
+        </ul>
+        <script>
+            function getAttributes(){
+                var w3resource = document.querySelector('p > a');
+                var attributes = new Object();
+                attributes.href = w3resource.getAttribute('href');
+                attributes.hreflang = w3resource.getAttribute('hreflang');
+                attributes.rel = w3resource.getAttribute('rel');
+                attributes.target = w3resource.getAttribute('target');
+                attributes.type = w3resource.getAttribute('type');
+                console.log(attributes);
+            }
+        </script>
+    </body>
+</html>

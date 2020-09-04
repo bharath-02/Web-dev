@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- Exercise 9 -->
+<html>
+    <head>
+        <meta charset=utf-8 />
+        <style type="text/css">
+            body {
+                margin: 30px;
+            }
+        </style>
+        <title>Count and display items of a dropdown list - w3resource</title>
+    </head>
+    <body>
+        <form>
+            Select your favorite Color:
+            <select id="mySelect">
+                <option>Red</option>
+                <option>Green</option>
+                <option>Blue</option>
+                <option>White</option>
+            </select>
+            <input type="button" onclick="getOptions()" value="Count and Output all items">
+        </form>
+        <ul>
+            <li><a href="01index.html">Go to question #1</a></li>
+            <li><a href="02index.html">Go to question #2</a></li>
+            <li><a href="03index.html">Go to question #3</a></li>
+            <li><a href="04index.html">Go to question #4</a></li>
+            <li><a href="05index.html">Go to question #5</a></li>
+            <li><a href="06index.html">Go to question #6</a></li>
+            <li><a href="07index.html">Go to question #7</a></li>
+            <li><a href="08index.html">Go to question #8</a></li>
+            <li><a href="09index.html">Go to question #9</a></li>
+            <li><a href="10index.html">Go to question #10</a></li>
+            <li><a href="11index.html">Go to question #11</a></li>
+            <li><a href="12index.html">Go to question #12</a></li>
+            <li><a href="13index.html">Go to question #13</a></li>
+        </ul>
+        <script>
+            function getOptions(){
+                var list = document.getElementById('mySelect');
+                var myString = '';
+                var myCounter = 0;
+                var favorite = document.forms[0].children[0].options[document.forms[0].children[0].selectedIndex].text;
+                for (let item of list){
+                    myString += item.text + ', ';
+                    myCounter += 1;
+                }
+                myString += myCounter + ' items'
+                alert('Your favorite color is: ' + favorite + '\n' + myString);
+            }
+        </script>
+    </body>
+</html>

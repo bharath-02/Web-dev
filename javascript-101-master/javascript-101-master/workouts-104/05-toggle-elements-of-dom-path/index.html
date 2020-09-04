@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <title>DOM Atomic 05</title>
+  <script type="text/javascript" src="global.js"></script>
+</head>
+<body>
+
+  <div class="movies">
+    <p>This is a div containing a list of movies:</p>
+
+    <!-- These movies should not be toggled. -->
+    <ul class="first_five">
+      <li>Jurassic Park</li>
+      <li>Aristocats</li>
+      <li>Oliver and Company</li>
+      <li>Homeward Bound</li>
+      <li>Balto</li>
+    </ul>
+
+    <!--
+      The display of these movies should be toggled
+      whenever the button below is clicked.
+    -->
+    <ul class="second_five">
+      <li style="display: none">Anastasia</li>
+      <li style="display: none">Rent</li>
+      <li style="display: none">Aladdin</li>
+      <li style="display: none">Clueless</li>
+      <li style="display: none">Home Alone</li>
+    </ul>
+
+    <!-- This is the button that'll do the toggling. -->
+    <button id="toggle_button">Toggle</button>
+  </div>
+
+</body>
+</html>

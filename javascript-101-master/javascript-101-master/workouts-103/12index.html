@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- Exercise 12 -->
+<html>
+    <head>
+        <title>Highlight test on link hover</title>
+        <style>
+            .hi-life{
+                background-color: yellow;
+            }
+            span {
+                font-weight: 900;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="#" onMouseOver="hiLite()" onmouseleave="unHiLite()">On mouse over here bold words of the following paragraph will be highlighted</a>
+        <p><span>We</span> have just started <span>this</span> section for the users (<span>beginner</span> to intermediate) who <span>want</span> to work with <span>various</span> JavaScript <span>problems</span> and write scripts online to <span>test</span> their JavaScript <span>skill</span>.</p>
+        <ul>
+            <li><a href="01index.html">Go to question #1</a></li>
+            <li><a href="02index.html">Go to question #2</a></li>
+            <li><a href="03index.html">Go to question #3</a></li>
+            <li><a href="04index.html">Go to question #4</a></li>
+            <li><a href="05index.html">Go to question #5</a></li>
+            <li><a href="06index.html">Go to question #6</a></li>
+            <li><a href="07index.html">Go to question #7</a></li>
+            <li><a href="08index.html">Go to question #8</a></li>
+            <li><a href="09index.html">Go to question #9</a></li>
+            <li><a href="10index.html">Go to question #10</a></li>
+            <li><a href="11index.html">Go to question #11</a></li>
+            <li><a href="12index.html">Go to question #12</a></li>
+            <li><a href="13index.html">Go to question #13</a></li>
+        </ul>
+        <script>
+            function hiLite(){
+                var hi = document.getElementsByTagName('span');
+                for (let i = 0; i < hi.length; i++){
+                    hi[i].className = "hi-life";
+                }
+            }
+            function unHiLite(){
+                var un_hi = document.getElementsByTagName('span');
+                for (let i = 0; i < un_hi.length; i++){
+                    un_hi[i].className -= "hi-life";
+                }
+            }
+        </script>
+    </body>
+</html>

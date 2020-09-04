@@ -1,0 +1,3 @@
+[submodule "book/src/pt-BR"]
+	path = book/src/pt-BR
+	url = http://github.com/herberthamaral/jqfundamentals-pt-BR.git

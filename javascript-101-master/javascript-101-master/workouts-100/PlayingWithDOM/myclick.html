@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<image src="hello.png" onclick="alert('Hi')"</image>
+
+<p>Demonstrating quirks of <code>on<em>event</em></code> HTML attributes on
+   <a onclick="log()">these three words</a>.
+</p>
+
+<button>Click</button>
+<div> Something in this div - https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events</div>
+
+
+<h2>https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onclick#Examples </h2>
+
+<script>
+function log() {
+  alert('Hi i am invoked')
+}
+
+function log1() {
+  alert('Hi i have overridden you')
+}
+
+
+const button = document.querySelector('button');
+
+button.addEventListener('click',log);
+button.addEventListener('click', log1);
+
+
+const mydiv = document.querySelector('div');
+
+mydiv.onclick = log;
+
+mydiv.onclick = log1;
+//onmouseover can be replaced for click.
+
+</script>
+
+</body>
+</html>

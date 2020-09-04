@@ -1,0 +1,114 @@
+Simple Event handler:
+---------------------
+Summary: Create a div and change the color onmouse over
+Time to complete: About 15 minutes.
+
+Simple DOM manipulation:
+------------------------
+
+Summary: Create 2 div with text "I am div1" & "I am div2" and a button. On click of the button the text of the two divs has to be swapped.
+Time to complete: About 20 minutes.
+
+Reading contents from text box & Basic Regx:
+-------------------------------------------
+Email & password validation
+Time to complete: About 30 minutes.
+
+Summary: Create a simple registration & login in HTML. While registering the username & password we have the following constraints
+
+UserName: It should be email id or phone number only. 
+Password: Should be 8 characters long and should have a special character at end.
+
+Roll over images:
+---------------
+
+Time to complete: About 15 minutes.
+Summary: Create an image box in which the images will be changing when you hover the box. You have have a list of 6 images.
+
+
+Hover on image to fit the frame:
+--------------------------------
+Time to complete: About 15 minutes. 
+Summary: You should have 1 large image box and 3 small ( preview boxes ) at the bottom. When you click the preview box it should appear in the large box at the top center.
+
+Create 4 group of display
+var groups = [
+  { 'id': 1, 'name': 'Student1', 'confirmed': false },
+  { 'id': 2, 'name': 'Student2', 'confirmed': true },
+  { 'id': 3, 'name': 'Student3', 'confirmed': false },
+  { 'id': 4, 'name': 'Student4', 'confirmed': false },
+  { 'id': 5, 'name': 'Student5', 'confirmed': true },
+  { 'id': 6, 'name': 'Student6', 'confirmed': true },
+  { 'id': 7, 'name': 'Student7', 'confirmed': true },
+  { 'id': 8, 'name': 'Student8', 'confirmed': true }
+];
+Time to complete: About 15 minutes.
+Summary: Display the above data in 4 columns so that each has 2 rows of student details.
+
+
+JSON - Dict
+
+Time to complete: About 30 minutes.
+Summary:
+/*
+Given an Array of strings, use Array#reduce to create an object that contains the number of times each string occured in the array. Return the object directly (no need to console.log).
+Example
+    var inputWords = ['Apple', 'Banana', 'Apple', 'Durian', 'Durian', 'Durian']
+    
+    console.log(countWords(inputWords))
+    
+    // =>
+    // {
+    //   Apple: 2,
+    //   Banana: 1,
+    //   Durian: 3
+    // }
+*/
+
+Map Usage
+
+Time to complete: About 30 minutes.
+Summary:
+
+// Convert the following code from a for-loop to Array#map:
+// * Your solution should use Array.prototype.map()
+// * Do not use any for/while loops or Array.prototype.forEach.
+// * Do not create any unnecessary functions e.g. helpers.
+
+function doubleAll(numbers) {
+  var result = []
+  for (var i = 0; i < numbers.length; i++) {
+    result.push(numbers[i] * 2)
+  }
+  return result
+}
+
+
+
+FB Wall- Infinite scroll
+Time to complete: About 90 minutes.
+Summary: Create a FB wall with infinite scroll
+
+https://codepen.io/wernight/details/YyvNoW
+Summary: Create a FB wall with infinite scroll
+
+
+Get and list all the repos 
+https://api.github.com/users/reach2arunprakash/repos
+Time to complete: About 20 minutes.
+Summary: Get the repo list from the github api and display in the page.
+
+
+User validation with your flask api
+Time to complete: About 120 minutes.
+
+Local Storage:
+
+Store the loggedin user info in Local storage.
+Time to complete: About 60 minutes.
+
+Data Table 
+https://datatables.net/
+
+ListJS
+https://listjs.com/

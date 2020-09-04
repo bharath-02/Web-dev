@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- Exercise 5 -->
+<html>
+    <head>
+        <meta charset=utf-8 />
+        <title>Insert row in a table - w3resource</title>
+    </head>
+    <body>
+        <table id="sampleTable" border="1">
+            <tr>
+                <td>Row1 cell1</td>
+                <td>Row1 cell2</td>
+            </tr>
+            <tr>
+                <td>Row2 cell1</td>
+                <td>Row2 cell2</td>
+            </tr>
+        </table><br>
+        <input type="button" onclick="insert_Row()" value="Insert row">
+        <ul>
+            <li><a href="01index.html">Go to question #1</a></li>
+            <li><a href="02index.html">Go to question #2</a></li>
+            <li><a href="03index.html">Go to question #3</a></li>
+            <li><a href="04index.html">Go to question #4</a></li>
+            <li><a href="05index.html">Go to question #5</a></li>
+            <li><a href="06index.html">Go to question #6</a></li>
+            <li><a href="07index.html">Go to question #7</a></li>
+            <li><a href="08index.html">Go to question #8</a></li>
+            <li><a href="09index.html">Go to question #9</a></li>
+            <li><a href="10index.html">Go to question #10</a></li>
+            <li><a href="11index.html">Go to question #11</a></li>
+            <li><a href="12index.html">Go to question #12</a></li>
+            <li><a href="13index.html">Go to question #13</a></li>
+        </ul>
+        <script>
+            var counter = 3;
+            function insert_Row(){
+                var sample_table = document.getElementById('sampleTable');
+                sample_table.insertAdjacentHTML('beforeend', `<tr><td>Row${counter} cell1</td><td>Row${counter} cell2</td></tr>`);
+                counter += 1;
+            }
+        </script>
+    </body>
+</html>
