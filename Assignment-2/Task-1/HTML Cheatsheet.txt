@@ -1,0 +1,59 @@
+	
+			HTML CheatSheet
+
+1. <html> </html> -Creates an HTML document
+2. <head> </head> -Sets off the title & other info that isn't displayed
+3. <body> </body> -Sets off the visible portion of the document
+4. <title></title>-Puts name of the document in the title bar; when
+	           bookmarking pages, this is what is bookmarked
+5. <pre> </pre>   -Creates preformatted text
+6. <h1> </h1> --> <h6> </h6>-Creates headlines -- H1=largest, H6=smallest
+7. <b>   </b>     -Creates bold text (should use <strong> instead)
+8. <i>   </i>     -Creates italicized text (should use <em> instead)
+9. <tt>  </tt>    -Creates typewriter-style text
+10.<code> </code> -Used to define source code, usually monospace
+11.<cite> </cite> -Creates a citation, usually processed in italics
+12.<address> </address>-Creates address section, usually processed in italics
+13.<em>   </em>   -Emphasizes a word (usually processed in italics)
+14.<strong></strong>-Emphasizes a word (usually processed in bold)
+15.<font></font>  -Sets color,size etc.
+16.<a>clickable text</a>Creates a hyperlink to a Uniform Resource Locator
+17.<p>    </p>    -Creates a new paragraph
+18.<br>		  -Inserts a line break (carriage return)
+19.<blockquote></blockquote>-Puts content in a quote - indents text from both sides
+20.<div>   </div> -Used to format block content with CSS
+21.<span>  </span>-Used to format inline content with CSS
+22.<ul>    </ul>  -Creates an unordered list
+23.<ol>    </ol>  -Creates an ordered list 
+24.<li>    </li>  -Encompasses each list item
+25.<hr>		  -Inserts a horizontal rule
+26.<img/>-Adds image; Sets the alternate text for browsers that can't
+		    process images
+27.<form> </form> -Defines a form
+28.<select></select>-Creates a scrolling menu. Size sets the number of 
+		     menu items visible before user needs to scroll.
+29.<option> 	  -Sets off each menu item
+30.<textarea></textarea>-Creates a text box area. Columns set the width;
+			 rows set the height.
+31.<input type="checkbox" name=? value=?>-Creates a checkbox.
+32.<input type="checkbox" name=? value=? checked>-Creates a checkbox which is pre-checked.
+33.<input type="radio" name=? value=?>-Creates a radio button.
+34.<input type="radio" name=? value=? checked>-Creates a radio button which is pre-checked.
+35.<input type="text" name=? size=?>-Creates a one-line text area. Size sets length, in
+				     characters.
+36.<input type="submit" value=?>-Creates a submit button. Value sets the text in the
+				 submit button.
+37.<input type="image" name=? src=? border=? alt=?>-Creates a submit button using an image.
+38.<input type="reset">-Creates a reset button
+39.<input type="email" name=?>- Sets a single-line textbox for email addresses
+40.<input type="url" name=?>- Sets a single-line textbox for URLs
+41<input type="number" name=?>- Sets a single-line textbox for a number
+42.<input type="range" name=?>- Sets a single-line text box for a range of numbers
+43.<input type="date/month/week/time" name=?>- Sets a single-line text box with a calendar
+ 					       showing the date/month/week/time
+44.<input type="search" name=?>- Sets a single-line text box for searching
+45.<input type="color" name=?>- Sets a single-line text box for picking a color 
+46.<table> </table>-Creates a table
+47.<tr> </tr>-Sets off each row in a table
+48.<td> </td>-Sets off each cell in a row
+49.<th> </th>-Sets off the table header (a normal cell with bold,centered text)
