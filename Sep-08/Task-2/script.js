@@ -9,5 +9,5 @@ try {
 	request.send();
 }
 catch(error) {
-	console.log("Found Error:",error.description);
+	console.log("Found Error:",error.message);
 }

@@ -1,0 +1,65 @@
+1). Find The Fix:
+    1. Uncaught TypeError: Cannot read property of undefined:-
+	* JavaScript TypeError is thrown when an operand or argument passed 
+	to a function is incompatible with the type expected by that operator 
+	or function.
+	* This error occurs in Chrome Browser when you read a property or call 
+	a method on an undefined object.
+	
+	EXAMPLE:
+		function myFunc(inVar) {
+  			if (inVar === undefined) {
+        			console.log(inVar.not)
+  			}
+  			return inVar;
+			}
+		var testVar;
+		console.log(myFunc(testVar)); 
+    
+
+    2. TypeError: Undefined is not an Object:-
+	* This error occurs when a property is accessed or a method is called 
+	on an undefined object. This error is shown only on safari browser.
+	
+	Example:
+		var person;
+		console.log(person.name);
+
+    
+    3. TypeError: Null is not an Object:-
+	* This error occurs when you read a property or call a method on a null object.
+	* An object is expected somewhere and wasn't provided. So, you will get null is 
+	not an object error.
+	
+	EXAMPLE:
+		var vehicle=null:
+		console.log(vehicle.model_name);
+
+    4). TypeError: Undefined is not a function:-
+  	* This error occurs when attempting to call a value like a function, where the 
+	value is not a function.
+
+	EXAMPLE:
+		var foo=undefined;
+		foo();
+
+    5). Uncaught RangeError: Maximum CallStack Exceeded:-
+	* Sometimes calling a recursive function over and over again, causes the browser 
+	to send you Maximum call stack size exceeded error message as the memory that can 
+	be allocated for your use is not unlimited.	
+	
+	EXAMPLE:
+		(function x() {
+  			x();
+		})();
+
+    6). TypeError: Cannot read property length:-
+	* This error occurs if try to find the length of normal variable of primitive type
+	instead of using 'length' function on array or string.
+
+	EXAMPLE:
+		var array;
+		for(var itr=0;itr<array.length;itr++) {
+			console.log(array[itr]);
+		}
+
