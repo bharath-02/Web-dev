@@ -1,5 +1,5 @@
 //Declare the callback function
-function something(operation,array) {
+function Calculator(operation,array) {
 	var value1=100,value2=20;
 	var result=array[operation](value1,value2);
 	console.log(result);
@@ -19,9 +19,9 @@ function div(a,b) {
 }
 //define the array of all the functions included in it
 var arr=[add,sub,mul,div];
-something(0,arr) // 120
-something(1,arr) // 80
-something(2,arr) // 2000
-something(3,arr) // 5
+Calculator(0,arr) // 120
+Calculator(1,arr) // 80
+Calculator(2,arr) // 2000
+Calculator(3,arr) // 5
 
 
