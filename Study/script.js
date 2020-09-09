@@ -1,24 +1,19 @@
-var obj1={'name':'Bharath','id':8};
-var obj2={'id':8,'name':'Bharath'};
+var m1 = 10;
+m1 = 20;
 
-var flag=0;
-if(Object.keys(obj1).length===Object.keys(obj2).length) {
-	for(var key in obj1) {
-		if(obj1[key]===obj2[key]) {
-			flag=1;
-		}
-		else {
-			flag=0;
-			break;
-		}
-	}
+function f1(m1)
+{
+if(m1 == 10)
+{
+  m1 = 20;
+   return 30;
 }
-else {
-	flag=0;
+if(m1 == 11)
+{
+  return;
 }
-if(flag===0) {
-	console.log('The Objects are not equal');
+return 30;
+console.log(m1);
 }
-else {
-	console.log('The Objects are equal');
-}
+m1 = f1(11);
+console.log(m1);
