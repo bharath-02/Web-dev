@@ -1,0 +1,24 @@
+body {
+    margin:0
+}
+#main-block {
+    background-color:rgba(168, 26, 26, 0.87);
+    text-align:center;
+    color:white;
+    font-family: sans-serif;
+}
+table {
+    background-color: lightgoldenrodyellow;
+    width:100%;
+}
+table, td  {
+    border: 1px solid rgb(138, 128, 128);
+    border-collapse: collapse;
+}
+.first-row {
+    width:15px;
+}
+.submit {
+    padding:5px;
+    margin-left:500px;
+}
