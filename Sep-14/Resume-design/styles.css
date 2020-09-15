@@ -1,0 +1,122 @@
+body {
+    margin:0;
+}
+main {
+    width:50%;
+    height:1150px;
+    background-color: rgb(235, 228, 235);
+    border:2px solid black;
+    margin:auto;
+}
+.top-header {
+    width:100%;
+    height:150px;
+    background-color: rgb(84, 84, 85);
+    margin:auto;
+}
+.mid-header {
+    width:100%;
+    height:40px;
+    background-color: rgb(235, 228, 235);
+    margin:auto;
+}
+.bottom-header {
+    width:100%;
+    height:25px;
+    background-color:rgb(84, 84, 85);
+    margin:auto;
+}
+.resume-image {
+    width:100px;
+    height:100px;
+    border:3px dashed orange;
+    border-radius: 50%;
+    position:absolute;
+    top:50px;
+    left:625px;
+}
+.name {
+    width:20%;
+    height:30px;
+    background-color: orange;
+    text-align: center;
+    padding-top:10px;
+    padding-bottom:18px;
+    position:absolute;
+    top:105px;
+    left:540px;
+    border-radius: 5%;
+    font-size:35px;
+    font-family:sans-serif;
+}
+.address {
+    text-align: center;
+    font-size:14px;
+    font-family:sans-serif;
+    padding:5px;
+}
+.line {
+    width:90%;
+    margin:auto;
+}
+.v-line {
+    border-left:2px solid gray;
+    height:860px;
+    position:absolute;
+    top:270px;
+    left:680px;
+}
+.profile-section {
+    width:40%;
+    height:130px;
+    margin:30px;
+    font-family: sans-serif;
+    font-size:13px;
+}
+.skills-section {
+    width:40%;
+    height:300px;
+    margin:30px;
+    font-family: sans-serif;
+    font-size:13px;
+
+}
+h4 {
+    text-align: center;
+}
+.work-section-1 {
+    width:40%;
+    height:370px;
+    margin:30px;
+    font-family: sans-serif;
+    font-size:13px;
+}
+.date1 {
+    padding-left:70px;
+}
+.work-section-2 {
+    position: relative;
+    left:350px;
+    bottom:890px;
+    width:40%;
+    height:260px;
+    margin:30px;
+    font-family: sans-serif;
+    font-size:13px;
+}
+.date2 {
+    padding-left:105px;
+}
+.edu-section {
+    position: relative;
+    left:350px;
+    bottom:890px;
+    width:40%;
+    height:560px;
+    margin:30px;
+    font-family: sans-serif;
+    font-size:14px;
+}
+.date3 {
+    padding-left:100px;
+}
