@@ -1,0 +1,31 @@
+body {
+    margin:0;
+}
+.total-section {
+    width:50%;
+    margin:0 auto;
+    margin-top: 20px;
+    border:2px solid black;
+}
+.bg-color {
+    height:55%;
+    background-color:rgb(84, 84, 85);
+}
+img {
+    display:block;
+    margin:0 auto;
+    width:100px;
+    height:100px;
+    border:3px dashed orange;
+    border-radius: 50%;
+}
+.name {
+    text-align: center;
+    width:25%; 
+    height:30px; 
+    display:block;
+    margin:0 auto;
+    padding-top:3x;
+    background-color: orange;
+    margin-bottom:10px;
+}
