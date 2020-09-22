@@ -1,0 +1,37 @@
+#container {
+    width:50%;
+    height:500px;
+    background-color:lightblue;
+    margin:50px auto;
+}
+#heading {
+    text-align: center;
+    padding:20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#label-field {
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding:30px;
+    margin-left: 70px;
+}
+#dob {
+    margin-left: 60px;
+    padding:5px;
+    border:2px solid black;
+    border-radius: 5%;
+}
+#btn {
+    width:25%;
+    padding:10px;
+    border: 2px solid black;
+    border-radius: 5%;
+    margin-top: 50px;
+    margin-left: 250px;
+}
+#result {
+    font-size: 20px;
+    font-family: cursive;
+    margin-left: 20px;
+    margin-top: 50px;
+}

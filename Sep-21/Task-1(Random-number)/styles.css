@@ -1,0 +1,34 @@
+#outline {
+	background-color: lightgray;
+	width:50%;
+	height:500px;
+	margin:50px auto;
+}
+#heading {
+	padding-top:50px;
+	text-align: center;
+	font-family: 'Ranchers', cursive;
+}
+#result {
+	width:30%;
+	height:20px;
+	background-color: white;
+	border: 2px solid black;
+	border-radius: 5%;
+	padding:10px;
+	text-align: center;
+	position:relative;
+	left:220px;
+}
+#button {
+	width:20%;
+	padding:15px;
+	font-size: 24px;
+	color:white;
+	border: 2px solid rgb(33, 19, 68);
+	border-radius: 5%;
+	background-color: dodgerblue;
+	position: relative;
+	top:200px;
+	left:270px;
+}
