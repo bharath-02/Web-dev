@@ -1,4 +1,4 @@
-
+// Countdown starts
 setTimeout(()=>{
     document.getElementById('countdown').innerHTML = 10;
     setTimeout(()=>{
