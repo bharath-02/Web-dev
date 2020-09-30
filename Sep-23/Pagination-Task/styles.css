@@ -5,10 +5,12 @@
     box-sizing: border-box;
 }
 .navbar {
-    margin:20px 450px;
+    /* width:50%; */
+    margin: 20px 450px;
 }
-#display {
-    width:50%;
-    height:50px; 
-    background-color: red;
+
+@media screen and (max-width:500px) {
+    .navbar {
+        margin:0;
+    }
 }
