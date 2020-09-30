@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <!--Required meta tags-->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Title -->
+      <title>JSON-Task</title>
+      <!-- Stylesheets -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <link href="styles.css" rel="stylesheet">
+      <!-- End of head tag -->
+    </head>
+    <body>
+      <!-- Defining the container -->
+      <div class="container">
+        <!-- Defining form -->
+        <form onsubmit="return false;">
+          <!-- Creating row class -->
+          <div class="row">
+            <div class="form-group col-lg-6 col-md-6 col-sm-12">
+              <label for="productname">Product Name</label>
+              <input type="text" class="form-control" id="productname">
+            </div>
+            <div class="form-group col-lg-6 col-md-6 col-sm-12">
+              <label for="baseprice">Base Price</label>
+              <input type="number" class="form-control" id="baseprice">
+            </div>
+            <div class="col-lg-3">
+              <button class="btn btn-primary" onclick="add()">+</button>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-lg-3">
+              <button class="btn btn-success" onclick="addOn()">Add on</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <script src="script.js"></script>
+    </body>
+</html>
