@@ -604,7 +604,7 @@ document.body.append(table);
 table.append(thead,tbody);
 
 
-
+//  Function which invokes the table
 function addData(start,end) {
     // When any pagination links are clicked initially the previous data gets cleared
     document.getElementById('headresult').innerHTML='';
