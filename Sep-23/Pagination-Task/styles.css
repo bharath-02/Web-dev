@@ -1,0 +1,14 @@
+/* Defaults */
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.navbar {
+    margin:20px 450px;
+}
+#display {
+    width:50%;
+    height:50px; 
+    background-color: red;
+}
