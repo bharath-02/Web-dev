@@ -1,0 +1,11 @@
+/* Defaults */
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#heading {
+    font-family: sans-serif;
+    margin:50px 0;
+}
