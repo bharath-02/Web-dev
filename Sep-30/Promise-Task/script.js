@@ -34,7 +34,7 @@ promise()
         var currencySymbol=data[i].currencies[0].code;
         //  Creating the card
         var outerDiv=document.createElement('div');
-        outerDiv.setAttribute('class','col-xs-6');
+        // outerDiv.setAttribute('class','col-sm-6');
         var card=document.createElement('div');
         card.setAttribute('class','card');
         var cardBody=document.createElement('div')
@@ -63,11 +63,11 @@ function setValues(key,value) {
     div.setAttribute('class','row');
     for(var i=0;i<key.length;i++) {
         var div1=document.createElement('div');
-        div1.setAttribute('class','col-sm-6');
+        div1.setAttribute('class','col-sm-5');
         div1.innerHTML=key[i];
         if(i==2) {
             var div2=document.createElement('div');
-            div2.setAttribute('class','col-sm-6');
+            div2.setAttribute('class','col-sm-7');
             var a=document.createElement('a');
             a.setAttribute('href',value[i]);
             a.setAttribute('target','_blank');
@@ -76,7 +76,7 @@ function setValues(key,value) {
         }
         else {
             var div2=document.createElement('div');
-            div2.setAttribute('class','col-sm-6');
+            div2.setAttribute('class','col-sm-7');
             div2.innerHTML=value[i];
         }
         div.append(div1,div2);
