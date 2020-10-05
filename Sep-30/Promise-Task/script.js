@@ -34,7 +34,7 @@ promise()
         var currencySymbol=data[i].currencies[0].code;
         //  Creating the card
         var outerDiv=document.createElement('div');
-        // outerDiv.setAttribute('class','col-sm-6');
+        outerDiv.setAttribute('class','col-sm-6');
         var card=document.createElement('div');
         card.setAttribute('class','card');
         var cardBody=document.createElement('div')
