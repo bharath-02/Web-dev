@@ -31,8 +31,8 @@ async function loadCountries() {
         var weatherinfo = document.createElement('div');
         weatherinfo.setAttribute('class', 'row');
         weatherinfo.id = 'weatherDetails' + capital;
-        var button = document.createElement('a');
-        button.setAttribute('href', '#');
+        var button = document.createElement('button');
+        button.setAttribute('type', 'button');
         button.setAttribute('class', 'btn btn-primary weatherButton');
         button.setAttribute('onclick', 'weatherDetail("' + capital + '")');
         button.innerHTML = 'Weather-Info';
