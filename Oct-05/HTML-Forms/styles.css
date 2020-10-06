@@ -1,0 +1,16 @@
+/* Defaults */
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container {
+    margin-top: 50px;
+}
+label {
+    margin-top:10px;
+}
+#heading {
+    text-align: center;
+    margin:0 0 50px 0;
+}
