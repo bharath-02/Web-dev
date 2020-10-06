@@ -122,4 +122,3 @@ async function addData() {
     document.getElementById('firstname').focus();
     getUsers();
 }
-// getUsers();
