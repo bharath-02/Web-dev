@@ -124,3 +124,4 @@ function setValues(key, value) {
 }
 
 loadCountries();
+console.log('Hiii');
