@@ -2,9 +2,78 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Cricket</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cricket-game</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     </head>
     <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="left-title">
+                        <h1 class="text-center">CSK</h1>
+                        <h1 class="text-center" id="csk-score">0</h1>
+                        <div class="text-center">
+                            <button class="btn btn-info" id="csk-hit">HIT</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+                    <h1 class="text-center">T20-Match</h1>
+                </div>
+                <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="right-title">
+                        <h1 class="text-center">MI</h1>
+                        <h1 class="text-center" id="mi-score">0</h1>
+                        <div class="text-center">
+                            <button class="btn btn-info" id="mi-hit">HIT</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-5 col-lg-5">
+                    <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th scope="col">CSK</th>
+                            <th scope="col">B2</th>
+                            <th scope="col">B3</th>
+                            <th scope="col">B4</th>
+                            <th scope="col">B5</th>
+                            <th scope="col">B6</th>
+                            <th scope="col">Total</th>
+                          </tr>
+                        </thead>
+                        <tbody id="csk-players-score">
+                          
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-sm-12 col-md-2 col-lg-2">
+                    <h4 class="text-center">Scorecard</h4>
+                </div>
+                <div class="col-sm-12 col-md-5 col-lg-5">
+                    <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th scope="col">CSK</th>
+                            <th scope="col">B2</th>
+                            <th scope="col">B3</th>
+                            <th scope="col">B4</th>
+                            <th scope="col">B5</th>
+                            <th scope="col">B6</th>
+                            <th scope="col">Total</th>
+                          </tr>
+                        </thead>
+                        <tbody id="mi-players-score">
+                          
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
         <script src="script.js"></script>
     </body>
 </html>
