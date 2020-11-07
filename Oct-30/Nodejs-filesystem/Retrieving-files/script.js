@@ -27,5 +27,5 @@ var server = http.createServer((req, res) => {
 
 // Listening to the server
 server.listen(3300, () => {
-    console.log('Listening');
+    console.log('Listening on port 3300');
 });
