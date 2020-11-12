@@ -1,0 +1,65 @@
+<!-- HTML5 Declaration -->
+<!DOCTYPE html>
+<html>
+<!-- Head tag -->
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>GUVI-DataBase</title>
+    <!-- Bootstrap Stylesheets -->
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+    <!-- Custom CSS Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- End of Head -->
+</head>
+<!-- Body tag -->
+
+<body>
+    <div class="container">
+        <h1 class="text-center">Home Page</h1>
+        <div>
+            <table id="mentordata" class="table text-center">
+                <thead>
+                    <th>Name</th>
+                    <th>E-mail</th>
+                    <th>Subject</th>
+                    <th>Company</th>
+                    <th><i></i></th>
+                </thead>
+            </table>
+        </div>
+
+        <div id="mentorContainer">
+            <form onsubmit="addMentor();return false">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter Mentor Name">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter Mentor email">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="subject">Subject</label>
+                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject Name">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="company">Company</label>
+                        <input type="text" class="form-control" id="company" name="company" placeholder="Company Name">
+                    </div>
+                </div>
+                <div>
+                    <input type="submit" class="btn btn-info">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
