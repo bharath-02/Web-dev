@@ -37,9 +37,7 @@ app.get('/students/:id', (req, res) => {
     (studentdata.length !== 0) ? res.join(studentdata): res.status(400).json({ message: `Mentor with name ${req.params.id} not found` });
 })
 
-app.get('/student.html', (req, res) => {
-    res.sendFile(path.join(__dirname, 'files', 'student.html'));
-})
+app.get('/student.html', (req, res) => {})
 
 app.post('/students', (req, res) => {
     req.body.id = students.length + 1;
