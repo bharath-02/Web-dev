@@ -25,7 +25,7 @@ app.post('/', (req, res) => {
 })
 
 app.get('/mentors', (req, res) => {
-    res.json(students);
+    res.json(mentors);
 })
 
 app.get('/students', (req, res) => {
@@ -33,7 +33,7 @@ app.get('/students', (req, res) => {
 })
 
 app.get('/students/:id', (req, res) => {
-    let studentdata = students.filter((student) => student.mentor === req.params.id);
+    let studentdata = students.filter((student) => student.id === req.params.id);
     (studentdata.length !== 0) ? res.join(studentdata): res.status(400).json({ message: `Mentor with name ${req.params.id} not found` });
 })
 

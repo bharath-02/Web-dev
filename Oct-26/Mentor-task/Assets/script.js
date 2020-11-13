@@ -39,7 +39,7 @@ async function addMentor() {
         company: document.getElementById('company').value
     };
 
-    await fetch('https://localhost:3300/', {
+    await fetch('http://localhost:3300/', {
         method: "POST",
         body: JSON.stringify(data),
         headers: {
