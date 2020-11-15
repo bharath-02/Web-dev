@@ -1,0 +1,61 @@
+.app {
+    margin: auto;
+    width: 100%;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.banner {
+    height: 50%;
+    background-color: rgb(5, 5, 5);
+}
+
+.name {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    width: 25%;
+    height: 25%;
+    background-color: white;
+    color: black;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact {
+    text-align: center;
+    font-size: large;
+    color: black;
+}
+
+.cont {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.details {
+    column-count: 2;
+    column-rule: 2px solid gainsboro;
+}
+
+.skills {
+    list-style-type: none;
+}
+
+progress {
+    position: absolute;
+    width: 20%;
+    left: 20%;
+}
+
+h4 {
+    position: relative;
+    left: 3%;
+}
