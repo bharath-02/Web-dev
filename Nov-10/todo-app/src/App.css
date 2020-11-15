@@ -1,0 +1,48 @@
+#todo {
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    box-shadow: none;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+#head {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+
+#div {
+    width: 20%;
+    display: block;
+    margin: 100px auto;
+    padding-left: 20%;
+    padding-right: 20%;
+    /* border: 1px solid black; */
+}
+
+.px-4 {
+    margin-left: 10px;
+    padding: 0 15px;
+}
+
+.strike {
+    text-decoration: line-through;
+    color: rgb(0, 0, 0, 0.5);
+}
+
+.carddiv {
+    background: rgb(190, 220, 248);
+    color: black;
+}
+
+.carddiv:hover {
+    background: rgb(205, 250, 216);
+    color: black;
+    box-shadow: 3px 5px rgb(116, 114, 114);
+}
+
+button {
+    background: none;
+    border: 1px solid gainsboro;
+}
