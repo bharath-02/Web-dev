@@ -4,7 +4,7 @@ import img from './profile.jpg';
 
 const Image = () => {
     return (
-        <img src={img} alt='Profile-photo'/>
+        <img src={img} alt='Profile-pic'/>
     );
 }
 
