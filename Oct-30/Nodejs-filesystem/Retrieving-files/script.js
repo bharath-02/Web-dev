@@ -33,6 +33,3 @@ var server = http.createServer((req, res) => {
 server.listen(3300, () => {
     console.log('Listening on port 3300');
 });
-
-// "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTQvMLUgJIuTaNRAHoUUVgEyCp3ts_By9MFdQ&usqp=CAU"
-// "https://bit.ly/32qUflZ"
