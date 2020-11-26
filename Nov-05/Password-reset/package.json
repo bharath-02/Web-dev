@@ -1,0 +1,33 @@
+{
+    "name": "password-reset",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bharath-02/Email-Account-Verification.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/bharath-02/Email-Account-Verification/issues"
+    },
+    "homepage": "https://github.com/bharath-02/Email-Account-Verification#readme",
+    "dependencies": {
+        "colors": "^1.4.0",
+        "cors": "^2.8.5",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "express-jwt": "^6.0.0",
+        "express-validator": "^6.7.0",
+        "jsonwebtoken": "^8.5.1",
+        "lodash": "^4.17.20",
+        "mailgun-js": "^0.22.0",
+        "mongoose": "^5.10.15",
+        "nodemon": "^2.0.6"
+    }
+}
