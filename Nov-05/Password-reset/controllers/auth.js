@@ -68,6 +68,33 @@ exports.activateAccount = (req, res) => {
     }
 }
 
+exports.signin = (req, res) => {
+    const { email, password } = req.body;
+    User.findOne({ email }).exec((err, user) => {
+        if (err) {
+            return res.status(400).json({
+                error: "This user does'nt exist, signup first"
+            })
+        }
+
+        if (user.password !== password) {
+            return res.status(400).json({
+                error: "Email or Password is incorrect"
+            })
+        }
+
+        const token = jwt.sign({ _id: user._id }, process.env.SIGNIN_KEY, { expiresIn: '7d' });
+
+        const { _id, name, email } = user;
+
+        res.json({
+            token,
+            user: { _id, name, email }
+        })
+
+    })
+}
+
 exports.forgotPassword = (req, res) => {
     const { email } = req.body;
 
@@ -120,7 +147,8 @@ exports.resetPassword = (req, res) => {
                     return res.status(400).json({ error: "User with this token does not exist." })
                 }
                 const obj = {
-                    password: newPassword
+                    password: newPassword,
+                    resetLink: ''
                 }
                 user = lodash.extend(user, obj);
                 user.save((err, result) => {
