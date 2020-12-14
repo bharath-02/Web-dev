@@ -1,0 +1,9 @@
+#center {
+    text-align: center;
+    margin: 150px auto;
+}
+
+.btn {
+    width: 60%;
+    margin-top: 30px;
+}
